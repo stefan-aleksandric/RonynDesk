@@ -1,6 +1,27 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 *.log
+
+# IDEs/editors
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PyInstaller build folders
+build/
+dist/
+*.spec
+
+# Output exe folder
+RonynDeskApp/
+
+# Virtual environments
 venv/
 .env/
-*.db
+
