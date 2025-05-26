@@ -100,7 +100,7 @@ class RonynDeskApp(tk.Tk):
 
         header = tk.Frame(app_window, bg="#111111"); header.pack(fill="x", padx=20, pady=(10, 0))
         back_btn = tk.Button(header, text="←", command=lambda: self.back_to_main(app_window), bg="#1a1a1a", fg="white", activebackground="#333333", activeforeground="white", font=("Segoe UI", 14), relief="flat", padx=10, pady=5, cursor="hand2"); back_btn.pack(side="left")
-        label = tk.Label(header, text=f"RonynDesk/{app_name.replace('_', ' ').title()}", font=("Segoe UI", 14), fg="white", bg="#111111"); label.pack(side="left", padx=20)
+        label = tk.Label(header, text=app_name.replace('_', ' ').title(), font=("Segoe UI", 16, "bold"), fg="white", bg="#111111"); label.pack(side="top", pady=(5, 10))
 
         try:
             app_module = importlib.import_module(f"apps.{app_name}.ui")
@@ -115,4 +115,5 @@ class RonynDeskApp(tk.Tk):
 def launch_ui():
     app = RonynDeskApp()
     app.mainloop()
+
 
