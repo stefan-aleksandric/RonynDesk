@@ -4,6 +4,8 @@
 
 Inspired by the self-sufficient power of a ronin, RonynDesk is both **personal and extensible**, allowing users to plug in their own tools or use built-in ones.
 
+Work in progress!!!
+
 ---
 
 ## 🔧 Features
